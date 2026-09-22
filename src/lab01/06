@@ -1,0 +1,7 @@
+n=int(input('n='))
+och,zaoch=0,0
+for i in range (n):
+    name,fam,age,form=input('Введите имя,фамилию,возраст и формат обучения:').split()
+    if form=='True':och+=1
+    else: zaoch+=1
+print(och,zaoch)

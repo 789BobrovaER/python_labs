@@ -1,0 +1,22 @@
+stroka=input('Введите строку:')
+
+nom1=0
+for j in range(len(stroka)):
+        if stroka[j].isupper()==True:
+               nom1=j
+               break
+final=stroka.find('.')
+
+stroka=stroka[nom1:final+1]
+
+for c in '123456789': stroka=stroka.replace(c,'0')
+for i in range(1,len(stroka)):
+        if stroka[i-1]=='0' and stroka[i]!='0':
+                shag=i
+                break
+
+stroka=stroka[::shag]
+
+print(stroka)
+
+
