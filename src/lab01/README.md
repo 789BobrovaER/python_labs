@@ -23,13 +23,15 @@
 
 
 Задача 05: Программа запрашивает ФИО, разбивает строку по пробелам в список. Выводит инициалы, обращаясь к первым символам каждого из трех элементов списка, а затем выводит общую длину всех трех частей ФИО без учета пробелов.
-<img width="696" height="155" alt="Снимок экрана 2026-09-16 194028" src="https://github.com/user-attachments/assets/96c0e3aa-ca74-481a-b5fa-f68436a41961" />
-<img width="495" height="95" alt="Снимок экрана 2026-09-22 220747" src="https://github.com/user-attachments/assets/ccb00a46-8a5c-41fe-b7c2-c2039b7e20e2" />
+<img width="507" height="98" alt="Снимок экрана 2026-09-23 132109" src="https://github.com/user-attachments/assets/36986b25-41c2-4fac-b45e-40ea46a9e737" />
+<img width="742" height="157" alt="Снимок экрана 2026-09-23 132117" src="https://github.com/user-attachments/assets/fcf9bfee-9001-48e1-b073-3da1d3bb740b" />
+
 
 
 Задача 06: Программа запрашивает количество студентов и обнуляет счетчики очников и заочников. В цикле считывает данные каждого студента, разбивая строку на четыре переменные. Если форма обучения равна True, увеличивает счетчик очников, иначе — заочников. В конце выводит оба счетчика.
-<img width="749" height="321" alt="Снимок экрана 2026-09-22 111241" src="https://github.com/user-attachments/assets/ecc901cb-885e-4e53-a086-37fb022d711a" />
-<img width="809" height="156" alt="Снимок экрана 2026-09-22 220552" src="https://github.com/user-attachments/assets/8fbcee86-8358-4c6a-99fb-07e598975a59" />
+<img width="339" height="143" alt="Снимок экрана 2026-09-23 131638" src="https://github.com/user-attachments/assets/fa25d0dc-eaf7-4de4-b3b6-d50c0f7c9f98" />
+<img width="771" height="239" alt="Снимок экрана 2026-09-23 131656" src="https://github.com/user-attachments/assets/5cd4b103-2233-4a4e-b960-67c53b4f91cf" />
+
 
 Задача 07:  Программа находит индекс первой заглавной буквы (начало слова) и индекс первой точки. Обрезает строку от первой буквы до точки, отбрасывая лишнее. Заменяет все цифры на ноль. В цикле ищет шаг. Затем формирует итоговую строку, учитывая шаг.
 <img width="646" height="574" alt="Снимок экрана 2026-09-22 215050" src="https://github.com/user-attachments/assets/f50befc3-7ec8-4a7d-8f3d-0333321fcfc7" />
