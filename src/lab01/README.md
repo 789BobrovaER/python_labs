@@ -32,8 +32,8 @@
 
 Задача 06: Программа запрашивает количество студентов и обнуляет счетчики очников и заочников. В цикле считывает данные каждого студента, разбивая строку на четыре переменные. Если форма обучения равна True, увеличивает счетчик очников, иначе — заочников. В конце выводит оба счетчика.
 
-<img width="771" height="239" alt="Снимок экрана 2026-09-23 131656" src="https://github.com/user-attachments/assets/5cd4b103-2233-4a4e-b960-67c53b4f91cf" />
-<img width="339" height="143" alt="Снимок экрана 2026-09-23 131638" src="https://github.com/user-attachments/assets/fa25d0dc-eaf7-4de4-b3b6-d50c0f7c9f98" />
+<img width="664" height="255" alt="Снимок экрана 2026-09-23 133424" src="https://github.com/user-attachments/assets/52d0079b-9d44-4c75-865d-d56e4b3ed983" />
+<img width="324" height="148" alt="Снимок экрана 2026-09-23 133414" src="https://github.com/user-attachments/assets/bab8ce18-fbc9-4454-8f80-1f9591cc4cb0" />
 
 
 
