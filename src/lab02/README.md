@@ -2,15 +2,20 @@
 
 ## min_max
 
-<img width="908" height="342" alt="Снимок экрана 2026-10-04 205724" src="https://github.com/user-attachments/assets/c0737c63-fe09-4461-ba39-aeb1d470b595" />
+<img width="905" height="368" alt="Снимок экрана 2026-10-04 212619" src="https://github.com/user-attachments/assets/fc1b8317-f2e0-44b7-92ed-1863b945ad73" />
+<img width="564" height="49" alt="Снимок экрана 2026-10-04 212626" src="https://github.com/user-attachments/assets/1e99b3c6-c430-4bc4-87fd-428d3a2a76d7" />
+
 
 ## unique_sorted
 
-<img width="810" height="209" alt="Снимок экрана 2026-10-04 210306" src="https://github.com/user-attachments/assets/390b47ec-a4be-459e-8529-2d704ad0c9d7" />
+<img width="809" height="234" alt="Снимок экрана 2026-10-04 212418" src="https://github.com/user-attachments/assets/f8b79f06-7ee2-4e20-94b3-718f717ee21e" />
+<img width="557" height="52" alt="Снимок экрана 2026-10-04 212444" src="https://github.com/user-attachments/assets/6ba0ad3f-3cc5-4811-bfa8-ab9f7b1ade7a" />
+
 
 ## flatten
 
 <img width="1072" height="275" alt="Снимок экрана 2026-10-04 210412" src="https://github.com/user-attachments/assets/5e1e0b6d-5a01-4379-85a1-e73efac8d36a" />
+<img width="565" height="40" alt="Снимок экрана 2026-10-04 212300" src="https://github.com/user-attachments/assets/81a00e14-ed8e-4800-9e4d-63abf43b781e" />
 
 
 # Задание №2
