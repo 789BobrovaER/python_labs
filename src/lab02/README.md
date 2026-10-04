@@ -33,5 +33,7 @@
 # Задание №3
 
 <img width="1052" height="370" alt="Снимок экрана 2026-10-04 211016" src="https://github.com/user-attachments/assets/7eb1655b-c449-4801-8234-84fcc96eaa20" />
-<img width="427" height="58" alt="Снимок экрана 2026-10-04 211224" src="https://github.com/user-attachments/assets/c19ae980-1899-402b-8365-68e78f2f8f43" />
+
 <img width="971" height="39" alt="Снимок экрана 2026-10-04 211211" src="https://github.com/user-attachments/assets/9855c6b9-e198-4427-b59d-e0b508e446ba" />
+<img width="427" height="58" alt="Снимок экрана 2026-10-04 211224" src="https://github.com/user-attachments/assets/c19ae980-1899-402b-8365-68e78f2f8f43" />
+
