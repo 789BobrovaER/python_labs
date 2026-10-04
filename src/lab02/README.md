@@ -19,15 +19,21 @@
 
 ## transpose
 
-<img width="737" height="344" alt="Снимок экрана 2026-10-04 210734" src="https://github.com/user-attachments/assets/be277268-b4be-4d7f-bf8d-391d112dcef8" />
+<img width="724" height="400" alt="Снимок экрана 2026-10-04 212032" src="https://github.com/user-attachments/assets/bcb644af-e72d-4dcf-9929-349cd0c069dc" />
+<img width="569" height="70" alt="Снимок экрана 2026-10-04 212042" src="https://github.com/user-attachments/assets/f4db2edc-617f-4735-9189-3a1589a68c7f" />
+
+
 
 ## row_sums
 
-<img width="740" height="142" alt="Снимок экрана 2026-10-04 210824" src="https://github.com/user-attachments/assets/63e3609b-5cf0-41d9-b07a-33a63ce939a0" />
+<img width="733" height="177" alt="Снимок экрана 2026-10-04 211835" src="https://github.com/user-attachments/assets/34acea31-8bd0-4f75-b6c7-2ae0df376b96" />
+<img width="524" height="55" alt="Снимок экрана 2026-10-04 211843" src="https://github.com/user-attachments/assets/61ec40fe-c43f-4bac-9064-e9ef19491685" />
+
 
 ## col_sums
 
-<img width="734" height="285" alt="Снимок экрана 2026-10-04 210909" src="https://github.com/user-attachments/assets/236c7638-c140-4e01-822b-66626da465b3" />
+<img width="739" height="296" alt="Снимок экрана 2026-10-04 211649" src="https://github.com/user-attachments/assets/29dd4944-d688-4bcf-9e2d-e72205d6c1fb" />
+<img width="548" height="48" alt="Снимок экрана 2026-10-04 211623" src="https://github.com/user-attachments/assets/3a8ce9cd-fd24-4a0d-938a-6e94bc6a58f9" />
 
 
 # Задание №3
