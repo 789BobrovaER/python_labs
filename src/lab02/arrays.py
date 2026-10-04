@@ -1,5 +1,4 @@
 def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
-    """Вернуть (минимум, максимум). Пустой список -> ValueError."""
     if len(nums) == 0:
         raise ValueError("Список пуст")
  
