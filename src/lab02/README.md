@@ -4,27 +4,25 @@
 
 Если список пуст, вызывается `ValueError`. Иначе первый элемент становится и минимумом (`lo`), и максимумом (`hi`). Цикл проходит по остальным элементам: если число меньше `lo`, обновляем `lo`, если больше `hi`, обновляем `hi`. В конце возвращается кортеж `(lo, hi)`. Встроенные `min()` и `max()` не используются.
 
+<img width="906" height="480" alt="Снимок экрана 2026-10-06 185112" src="https://github.com/user-attachments/assets/73f8142d-996e-44c8-8a8f-c0c0b63274ce" />
 
-<img width="905" height="368" alt="Снимок экрана 2026-10-04 212619" src="https://github.com/user-attachments/assets/fc1b8317-f2e0-44b7-92ed-1863b945ad73" />
-<img width="564" height="49" alt="Снимок экрана 2026-10-04 212626" src="https://github.com/user-attachments/assets/1e99b3c6-c430-4bc4-87fd-428d3a2a76d7" />
-
+<img width="1368" height="121" alt="Снимок экрана 2026-10-06 185203" src="https://github.com/user-attachments/assets/1450fed6-cdc9-4330-b520-01fdc56969be" />
 
 ## unique_sorted
 
 `set(nums)` убирает повторы, `list(...)` возвращает результат в список. Затем пузырьковая сортировка: внешний цикл повторяет проходы, внутренний сравнивает соседние элементы и меняет их местами, если левый больше правого. С каждым проходом самое большое число уходит в конец, поэтому отсортированный хвост пропускается (`len(sp) - 1 - i`). Встроенные `sorted()` и `sort()` не используются.
 
+<img width="991" height="351" alt="Снимок экрана 2026-10-06 185357" src="https://github.com/user-attachments/assets/1b6707ce-f7be-412d-b52c-c1face3cdb1a" />
 
-<img width="809" height="234" alt="Снимок экрана 2026-10-04 212418" src="https://github.com/user-attachments/assets/f8b79f06-7ee2-4e20-94b3-718f717ee21e" />
-<img width="557" height="52" alt="Снимок экрана 2026-10-04 212444" src="https://github.com/user-attachments/assets/6ba0ad3f-3cc5-4811-bfa8-ab9f7b1ade7a" />
-
+<img width="1362" height="121" alt="Снимок экрана 2026-10-06 185425" src="https://github.com/user-attachments/assets/6fc90037-869b-4f28-9c55-c04b6fcd41e9" />
 
 ## flatten
 
 Создаём пустой `result`. Цикл `for row in mat` берёт каждую строку матрицы. Если `row` не список и не кортеж, вызывается `TypeError` с названием полученного типа. Иначе вложенный цикл добавляет элементы строки в `result` по одному. Получается плоский список по строкам (row-major), пустые строки ничего не добавляют.
 
+<img width="1222" height="402" alt="Снимок экрана 2026-10-06 185619" src="https://github.com/user-attachments/assets/33c871f9-8bfd-4e34-87b5-a60b3fff7d93" />
 
-<img width="1072" height="275" alt="Снимок экрана 2026-10-04 210412" src="https://github.com/user-attachments/assets/5e1e0b6d-5a01-4379-85a1-e73efac8d36a" />
-<img width="565" height="40" alt="Снимок экрана 2026-10-04 212300" src="https://github.com/user-attachments/assets/81a00e14-ed8e-4800-9e4d-63abf43b781e" />
+<img width="1356" height="111" alt="Снимок экрана 2026-10-06 185640" src="https://github.com/user-attachments/assets/e2639e8a-efb0-42e1-9998-8defba7fcc3f" />
 
 
 # Задание №2
