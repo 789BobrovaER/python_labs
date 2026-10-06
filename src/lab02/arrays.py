@@ -10,10 +10,10 @@ def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
         if x > hi:
             hi = x
     return (lo, hi)
-print(min_max([1.5, 2, 2.0, -3.1]))
 
 
 def unique_sorted(nums: list[float | int]) -> list[float | int]:
+    '''Вернуть отсортированный список уникальных значений (по возрастанию).'''
     sp=list(set(nums))
     for i in range(len(sp) - 1):          
         for j in range(len(sp) - 1 - i):  
@@ -23,6 +23,8 @@ def unique_sorted(nums: list[float | int]) -> list[float | int]:
 
 
 def flatten(mat: list[list | tuple]) -> list:
+    '''«Расплющить» список списков/кортежей в один список по строкам (row-major). \
+        Если встретилась строка/элемент, который не является списком/кортежем — TypeError.'''
     result = []
     for row in mat:
         if not isinstance(row, (list, tuple)):

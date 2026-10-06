@@ -18,8 +18,6 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
         for m in mat:
             tr_mat[l].append(m[l])
     return tr_mat
-print(transpose([[1, 2], [3, 4]]))
-print(transpose([[1], [2], [3]]))
 
 def row_sums(mat: list[list[float | int]]) -> list[float]:
      '''Сумма по каждой строке.'''
@@ -27,7 +25,9 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
      check(mat)
      sum_mat=[sum(m) for m in mat]
      return(sum_mat)
-        
+
+
+
 def col_sums(mat: list[list[float | int]]) -> list[float]:
     '''Сумма по каждому столбцу. '''
     if mat==[]:return []
@@ -38,7 +38,6 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
          for m in mat:s+=m[l]
          col.append(s)
     return col
-
 
 
               
