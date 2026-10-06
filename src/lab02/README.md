@@ -37,9 +37,10 @@
 
 Для пустой матрицы сразу возвращается `[]`, затем `check` проверяет прямоугольность. Создаётся `tr_mat` с `ln` пустыми строками (по одной на каждый столбец). Затем для каждого номера столбца `l` элемент `m[l]` из каждой строки `m` добавляется в `tr_mat[l]`. Так строки и столбцы меняются местами.
 
+<img width="868" height="549" alt="Снимок экрана 2026-10-06 190735" src="https://github.com/user-attachments/assets/5fa90ccb-88b4-4841-b0e5-b85a3bc5bae2" />
+<img width="918" height="119" alt="Снимок экрана 2026-10-06 190751" src="https://github.com/user-attachments/assets/f28cf8ac-80d1-4ee1-bcfe-74f0c8c727cd" />
 
-<img width="724" height="400" alt="Снимок экрана 2026-10-04 212032" src="https://github.com/user-attachments/assets/bcb644af-e72d-4dcf-9929-349cd0c069dc" />
-<img width="569" height="70" alt="Снимок экрана 2026-10-04 212042" src="https://github.com/user-attachments/assets/f4db2edc-617f-4735-9189-3a1589a68c7f" />
+
 
 
 
@@ -47,9 +48,10 @@
 
 Для пустой матрицы возвращается `[]`, затем `check` проверяет прямоугольность. Генератор списка `[sum(m) for m in mat]` считает сумму каждой строки и собирает суммы в один список.
 
+<img width="760" height="292" alt="Снимок экрана 2026-10-06 191106" src="https://github.com/user-attachments/assets/1ce1433f-c239-46aa-8ba9-b7ce50c845d8" />
+<img width="868" height="102" alt="Снимок экрана 2026-10-06 191122" src="https://github.com/user-attachments/assets/6f6cbcd7-3990-4bce-9b7c-40e5dd37abb4" />
 
-<img width="733" height="177" alt="Снимок экрана 2026-10-04 211835" src="https://github.com/user-attachments/assets/34acea31-8bd0-4f75-b6c7-2ae0df376b96" />
-<img width="524" height="55" alt="Снимок экрана 2026-10-04 211843" src="https://github.com/user-attachments/assets/61ec40fe-c43f-4bac-9064-e9ef19491685" />
+
 
 
 ## col_sums
@@ -57,8 +59,11 @@
 Для пустой матрицы возвращается `[]`, затем `check` проверяет прямоугольность. Внешний цикл идёт по номерам столбцов `l`. Для каждого столбца `s` обнуляется, и в неё складываются элементы `m[l]` из всех строк. Готовая сумма добавляется в список `col`.
 
 
-<img width="739" height="296" alt="Снимок экрана 2026-10-04 211649" src="https://github.com/user-attachments/assets/29dd4944-d688-4bcf-9e2d-e72205d6c1fb" />
-<img width="548" height="48" alt="Снимок экрана 2026-10-04 211623" src="https://github.com/user-attachments/assets/3a8ce9cd-fd24-4a0d-938a-6e94bc6a58f9" />
+<img width="794" height="437" alt="Снимок экрана 2026-10-06 191312" src="https://github.com/user-attachments/assets/870dfc8a-a6b9-491a-95d3-a1304064f5d7" />
+<img width="824" height="93" alt="Снимок экрана 2026-10-06 191335" src="https://github.com/user-attachments/assets/4d1e0da9-8fb3-4bcc-a3dd-4c5d0ba6e573" />
+
+
+
 
 
 # Задание №3
