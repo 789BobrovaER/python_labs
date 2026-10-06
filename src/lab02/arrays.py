@@ -10,6 +10,8 @@ def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
         if x > hi:
             hi = x
     return (lo, hi)
+print(min_max([1.5, 2, 2.0, -3.1]))
+
 
 def unique_sorted(nums: list[float | int]) -> list[float | int]:
     sp=list(set(nums))
@@ -19,6 +21,7 @@ def unique_sorted(nums: list[float | int]) -> list[float | int]:
                 sp[j], sp[j + 1] = sp[j + 1], sp[j]
     return sp
 
+
 def flatten(mat: list[list | tuple]) -> list:
     result = []
     for row in mat:
@@ -27,4 +30,3 @@ def flatten(mat: list[list | tuple]) -> list:
         for x in row:
             result.append(x)
     return result
-print(flatten([[1], [], [2, 3]]))
