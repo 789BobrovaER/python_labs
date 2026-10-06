@@ -1,4 +1,4 @@
-# Задание №1
+<img width="1232" height="431" alt="image" src="https://github.com/user-attachments/assets/2d0a8688-a28d-44d9-8edd-a3d535b6aba0" /># Задание №1
 
 ## min_max
 
@@ -70,7 +70,8 @@
 
 Кортеж распаковывается на `fio`, `group` и `gpa`. `split()` делит ФИО на слова и убирает лишние пробелы (для группы это делает `" ".join(group.split())`). Если ФИО или группа пустые либо GPA вне диапазона 0–5, вызывается `ValueError`. Фамилия остаётся первым словом, а из имени и отчества (`fio[1:3]`) берутся первые буквы в верхнем регистре с точками, поэтому функция работает и с двумя, и с тремя словами. GPA форматируется с двумя знаками после запятой (`:.2f`), и всё собирается в строку вида `Иванов И.И., гр. BIVT-25, GPA 4.60`.
 
-<img width="1316" height="522" alt="Снимок экрана 2026-10-06 162736" src="https://github.com/user-attachments/assets/39db417b-a513-40ac-81d5-c278bc3344fa" />
+<img width="1232" height="431" alt="Снимок экрана 2026-10-06 191831" src="https://github.com/user-attachments/assets/13d5bd3e-dae8-48e0-9f98-c21a4172567e" />
+
 <img width="415" height="48" alt="image" src="https://github.com/user-attachments/assets/bbf248f8-cf26-414a-a07d-2fc101baaaf0" />
 
 
