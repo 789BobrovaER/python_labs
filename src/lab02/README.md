@@ -1,4 +1,4 @@
-<img width="1232" height="431" alt="image" src="https://github.com/user-attachments/assets/2d0a8688-a28d-44d9-8edd-a3d535b6aba0" /># Задание №1
+# Задание №1
 
 ## min_max
 
