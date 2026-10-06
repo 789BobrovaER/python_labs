@@ -1,5 +1,4 @@
 def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
-    """Вернуть (минимум, максимум). Пустой список -> ValueError."""
     if len(nums) == 0:
         raise ValueError("Список пуст")
  
@@ -32,3 +31,7 @@ def flatten(mat: list[list | tuple]) -> list:
         for x in row:
             result.append(x)
     return result
+<<<<<<< HEAD
+=======
+print(flatten([[1], [], [2, 3]]))
+>>>>>>> 1a3b282a99cc590ac79a3c1f328dd9183ebae6c4
