@@ -70,13 +70,10 @@
 
 Кортеж распаковывается на `fio`, `group` и `gpa`. `split()` делит ФИО на слова и убирает лишние пробелы (для группы это делает `" ".join(group.split())`). Если ФИО или группа пустые либо GPA вне диапазона 0–5, вызывается `ValueError`. Фамилия остаётся первым словом, а из имени и отчества (`fio[1:3]`) берутся первые буквы в верхнем регистре с точками, поэтому функция работает и с двумя, и с тремя словами. GPA форматируется с двумя знаками после запятой (`:.2f`), и всё собирается в строку вида `Иванов И.И., гр. BIVT-25, GPA 4.60`.
 
-<img width="1358" height="525" alt="Снимок экрана 2026-10-14 092719" src="https://github.com/user-attachments/assets/c7287cce-a201-4e00-8086-f43a60969c39" />
+<img width="1358" height="517" alt="Снимок экрана 2026-10-14 095312" src="https://github.com/user-attachments/assets/7a4629f9-1785-4c7f-858f-48a6fe0a0250" />
 
 
 <img width="415" height="48" alt="image" src="https://github.com/user-attachments/assets/bbf248f8-cf26-414a-a07d-2fc101baaaf0" />
 
 
-
-<img width="971" height="39" alt="Снимок экрана 2026-10-04 211211" src="https://github.com/user-attachments/assets/9855c6b9-e198-4427-b59d-e0b508e446ba" />
-<img width="427" height="58" alt="Снимок экрана 2026-10-04 211224" src="https://github.com/user-attachments/assets/c19ae980-1899-402b-8365-68e78f2f8f43" />
 
