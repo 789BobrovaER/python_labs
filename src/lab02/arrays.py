@@ -31,4 +31,3 @@ def flatten(mat: list[list | tuple]) -> list:
         for x in row:
             result.append(x)
     return result
-

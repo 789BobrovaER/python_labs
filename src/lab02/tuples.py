@@ -16,4 +16,4 @@ def format_record(rec: tuple[str, str, float]) -> str:
     gpa=f'GPA {gpa:.2f}'
 
     return (f'{fio}, гр. {group}, {gpa}')
-print(format_record(["  сидорова  анна    ", "ABB-01", 3.999]))
+print(format_record(("  сидорова  анна    ", "ABB-01", 3.999)))
