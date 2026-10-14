@@ -9,7 +9,7 @@ def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
         if x > hi:
             hi = x
     return (lo, hi)
-
+print(min_max([1, 2, 3, 4, 5]))
 
 def unique_sorted(nums: list[float | int]) -> list[float | int]:
     '''Вернуть отсортированный список уникальных значений (по возрастанию).'''
@@ -19,7 +19,7 @@ def unique_sorted(nums: list[float | int]) -> list[float | int]:
             if sp[j] > sp[j + 1]:
                 sp[j], sp[j + 1] = sp[j + 1], sp[j]
     return sp
-
+print(unique_sorted([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]))
 
 def flatten(mat: list[list | tuple]) -> list:
     '''«Расплющить» список списков/кортежей в один список по строкам (row-major). \
@@ -31,3 +31,4 @@ def flatten(mat: list[list | tuple]) -> list:
         for x in row:
             result.append(x)
     return result
+print(flatten([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
