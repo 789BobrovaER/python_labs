@@ -16,8 +16,8 @@
 
 # `top_n`
 Выбирает n самых частых слов. Проверяет, что словарь не пустой, сортирует пары по ключу (-частота, слово), то есть по убыванию частоты, а при равенстве по алфавиту, и берёт срез [:n].
-<img width="976" height="316" alt="Снимок экрана 2026-10-20 223423" src="https://github.com/user-attachments/assets/6985afcf-739e-426c-9781-42a859e4efce" />
-<img width="626" height="53" alt="Снимок экрана 2026-10-20 223431" src="https://github.com/user-attachments/assets/46a41d75-0195-4ac0-9f3b-543303e8a7af" />
+<img width="913" height="327" alt="Снимок экрана 2026-10-21 120835" src="https://github.com/user-attachments/assets/957db50b-1709-440f-9eab-2a2688addaa2" />
+<img width="569" height="62" alt="Снимок экрана 2026-10-21 120841" src="https://github.com/user-attachments/assets/863c3660-180c-475d-b0e6-80820409c0c5" />
 
 ## Задание B — src/text_stats.py
 
