@@ -1,6 +1,6 @@
 from lib.text  import normalize, tokenize, count_freq, top_n
 
-mode = True
+mode = False
 
 
 def main():
