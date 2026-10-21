@@ -28,5 +28,6 @@
 
 # mode -> True
 <img width="204" height="146" alt="Снимок экрана 2026-10-21 111641" src="https://github.com/user-attachments/assets/10502962-d94a-421c-855f-6a29328017ac" />
-# mode ->False
+
+# mode -> False
 <img width="343" height="141" alt="Снимок экрана 2026-10-21 112743" src="https://github.com/user-attachments/assets/bb1dffd9-0996-4fd9-b8a0-c780ca757065" />
