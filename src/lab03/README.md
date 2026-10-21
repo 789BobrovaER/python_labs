@@ -18,3 +18,15 @@
 Выбирает n самых частых слов. Проверяет, что словарь не пустой, сортирует пары по ключу (-частота, слово), то есть по убыванию частоты, а при равенстве по алфавиту, и берёт срез [:n].
 <img width="976" height="316" alt="Снимок экрана 2026-10-20 223423" src="https://github.com/user-attachments/assets/6985afcf-739e-426c-9781-42a859e4efce" />
 <img width="626" height="53" alt="Снимок экрана 2026-10-20 223431" src="https://github.com/user-attachments/assets/46a41d75-0195-4ac0-9f3b-543303e8a7af" />
+
+## Задание B — src/text_stats.py
+**Задание B: `text_stats.py`**
+
+Скрипт читает одну строку из stdin и выводит статистику по словам, используя функции из `lib/text.py`. Печатаются общее число слов, число уникальных и топ-5. Константа `mode` задаёт формат: при `False` выводятся строки `слово:частота`, при `True` таблица `слово | частота` с шириной колонки по самому длинному слову. Запуск из папки `src`: `python -m lab03.text_stats`.
+
+<img width="488" height="623" alt="Снимок экрана 2026-10-21 112754" src="https://github.com/user-attachments/assets/c95a554d-2eb0-469e-bbbf-f9e01ca204d5" />
+
+# mode -> True
+<img width="204" height="146" alt="Снимок экрана 2026-10-21 111641" src="https://github.com/user-attachments/assets/10502962-d94a-421c-855f-6a29328017ac" />
+# mode ->False
+<img width="343" height="141" alt="Снимок экрана 2026-10-21 112743" src="https://github.com/user-attachments/assets/bb1dffd9-0996-4fd9-b8a0-c780ca757065" />
