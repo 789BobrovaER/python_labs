@@ -30,8 +30,9 @@
 ```
 python -m src.lab04.text_report
 ```
-![alt text](<Снимок экрана 2026-11-14 233001.png>)
-![alt text](<Снимок экрана 2026-11-14 233006.png>)
+<img width="308" height="134" alt="Снимок экрана 2026-11-14 233006" src="https://github.com/user-attachments/assets/994af9fc-76fa-4c20-a203-58917d4b14ae" />
+<img width="550" height="318" alt="Снимок экрана 2026-11-14 233001" src="https://github.com/user-attachments/assets/8a4401e2-b1bd-459b-9aaa-1dbe66a141ef" />
+
 
 
 ## ★ Дополнительно
@@ -43,6 +44,6 @@ python -m src.lab04.text_report
 ```
 python -m src.lab04.text_report --in data/lab04/a.txt data/lab04/b.txt --per-file data/lab04/report_per_file.csv --total data/lab04/report_total.csv --table
 ```
+<img width="1373" height="464" alt="Снимок экрана 2026-11-14 233527" src="https://github.com/user-attachments/assets/8c77f765-2918-433d-a222-b3f9775845a4" />
 
 
-![alt text](image.png)
