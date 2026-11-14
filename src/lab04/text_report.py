@@ -5,7 +5,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-from io_txt_csv import read_text, write_csv
+from src.lab04.io_txt_csv import read_text, write_csv
 from src.lib.text import count_freq, normalize, tokenize, top_n
 
 
