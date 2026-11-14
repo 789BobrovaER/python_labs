@@ -65,8 +65,8 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
 
     return sorted(freq.items(), key=lambda x: (-x[1], x[0]))[:n]
 
-print(f'top_n({{"a":3,"b":2,"c":1}}, n=2) -> {top_n({"a":3,"b":2,"c":1}, n=2)}')
-print(f'top_n({{"aa":2,"bb":2,"cc":1}}, n=2) -> {top_n({"aa":2,"bb":2,"cc":1}, n=2)}')
+#print(f'top_n({{"a":3,"b":2,"c":1}}, n=2) -> {top_n({"a":3,"b":2,"c":1}, n=2)}')
+#print(f'top_n({{"aa":2,"bb":2,"cc":1}}, n=2) -> {top_n({"aa":2,"bb":2,"cc":1}, n=2)}')
 
 
 

@@ -12,7 +12,7 @@
 
 Краевые случаи: пустой файл читается как `""`; `write_csv` без данных создаёт пустой файл, только с `header` создаёт файл из одной строки заголовка. Файл читается целиком (по ТЗ), для больших файлов в реальности лучше читать построчно.
 
-![Тесты A](images/lab04/img01.png)
+![alt text](<Снимок экрана 2026-11-14 224630.png>)
 
 ## Задание B
 
@@ -29,10 +29,9 @@
 ```
 python -m src.lab04.text_report
 ```
+![alt text](<Снимок экрана 2026-11-14 233001.png>)
+![alt text](<Снимок экрана 2026-11-14 233006.png>)
 
-![Базовый запуск](images/lab04/img02.png)
-
-![Пустой файл и cp1251](images/lab04/img03.png)
 
 ## ★ Дополнительно
 
@@ -44,4 +43,5 @@ python -m src.lab04.text_report
 python -m src.lab04.text_report --in data/lab04/a.txt data/lab04/b.txt --per-file data/lab04/report_per_file.csv --total data/lab04/report_total.csv --table
 ```
 
-![Несколько файлов](images/lab04/img04.png)
+
+![alt text](image.png)

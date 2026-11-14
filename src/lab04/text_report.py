@@ -1,12 +1,15 @@
-"""Отчёт по частотам слов: читает TXT-файл(ы), пишет CSV, печатает резюме."""
+"""Отчёт по частотам слов: читает TXT-файл(ы), пишет CSV, печатает таблицы и резюме."""
 
 import argparse
 import sys
 from collections import Counter
 from pathlib import Path
 
-from src.lab04.io_txt_csv import read_text, write_csv
-from src.lib.text import count_freq, normalize, tokenize, top_n
+# корень проекта в sys.path, чтобы работал запуск и кнопкой, и через -m
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+from src.lab04.io_txt_csv import read_text, write_csv  # noqa: E402
+from src.lib.text import count_freq, normalize, tokenize, top_n  # noqa: E402
 
 
 def sorted_word_counts(freq: dict[str, int]) -> list[tuple[str, int]]:
@@ -14,15 +17,25 @@ def sorted_word_counts(freq: dict[str, int]) -> list[tuple[str, int]]:
     return sorted(freq.items(), key=lambda kv: (-kv[1], kv[0]))
 
 
-def print_table(rows: list[tuple[str, int]]) -> None:
-    """Печатает пары (слово, частота) таблицей с шириной по самому длинному слову."""
-    if not rows:
-        return
-    width = max(len("слово"), *(len(w) for w, _ in rows))
-    print(f"{'слово':<{width}} | частота")
-    print("-" * width + "-+-" + "-" * 7)
-    for word, count in rows:
-        print(f"{word:<{width}} | {count}")
+def print_table(header: tuple[str, ...], rows: list[tuple]) -> None:
+    """Печатает таблицу, ширина каждой колонки равна самому длинному значению."""
+    cells = [[str(c) for c in row] for row in rows]
+    widths = [
+        max(len(h), *(len(r[i]) for r in cells)) if cells else len(h)
+        for i, h in enumerate(header)
+    ]
+
+    def line(values: list[str]) -> str:
+        return " | ".join(v.ljust(w) for v, w in zip(values, widths)).rstrip()
+
+    last = len(widths) - 1
+    sep = "+".join(
+        "-" * (w + (1 if i in (0, last) else 2)) for i, w in enumerate(widths)
+    )
+    print(line(list(header)))
+    print(sep)
+    for r in cells:
+        print(line(r))
 
 
 def parse_args() -> argparse.Namespace:
@@ -39,8 +52,6 @@ def parse_args() -> argparse.Namespace:
                    help="путь для отчёта file,word,count по каждому файлу (★)")
     p.add_argument("--total", default=None,
                    help="путь для сводного отчёта word,count по всем файлам (★)")
-    p.add_argument("--table", action="store_true",
-                   help="печатать топ-5 таблицей (★)")
     return p.parse_args()
 
 
@@ -63,7 +74,8 @@ def main() -> int:
                   f"{args.encoding} (попробуйте --encoding cp1251)", file=sys.stderr)
             return 1
 
-        tokens = tokenize(normalize(text))
+        # normalize из ЛР3 падает на пустой строке, поэтому пустой вход обрабатываем отдельно
+        tokens = tokenize(normalize(text)) if text.strip() else []
         freq = count_freq(tokens)
         all_tokens += len(tokens)
         total.update(freq)
@@ -71,23 +83,32 @@ def main() -> int:
         per_file_rows.extend((name, w, c) for w, c in freq.items())
 
     rows = sorted_word_counts(dict(total))
-    write_csv(rows, args.out_file, header=("word", "count"))
+    per_file_rows.sort(key=lambda r: (r[0], -r[2], r[1]))
 
+    write_csv(rows, args.out_file, header=("word", "count"))
     if args.total:
         write_csv(rows, args.total, header=("word", "count"))
     if args.per_file:
-        per_file_rows.sort(key=lambda r: (r[0], -r[2], r[1]))
         write_csv(per_file_rows, args.per_file, header=("file", "word", "count"))
 
+    if args.per_file:
+        print("--- Отчёт по каждому файлу ---")
+        print_table(("file", "word", "count"), per_file_rows)
+        print()
+
+    title = "Сводный отчёт" if (len(args.inputs) > 1 or args.total) else "Отчёт"
+    print(f"--- {title} ---")
+    print_table(("word", "count"), rows)
+    print()
+
+    print("=== Краткое резюме ===")
     print(f"Всего слов: {all_tokens}")
     print(f"Уникальных слов: {len(total)}")
     print("Топ-5:")
-    top = top_n(dict(total), 5)
-    if args.table:
-        print_table(top)
-    else:
-        for word, count in top:
-            print(f"{word}:{count}")
+    # top_n из ЛР3 падает на пустом словаре, поэтому пустой случай обходим отдельно
+    top = top_n(dict(total), 5) if total else []
+    for word, count in top:
+        print(f"{word}:{count}")
     return 0
 
 
