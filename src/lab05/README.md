@@ -58,6 +58,36 @@
 - использует первую строку CSV как заголовки;
 - сохраняет значения в виде строк;
 - форматирует JSON с отступами.
+<img width="312" height="185" alt="Снимок экрана 2026-11-16 205411" src="https://github.com/user-attachments/assets/682893d6-6318-45d0-81b0-443bfd02d5d6" />
+```python
+[
+  {
+    "name": "Alice",
+    "age": "22",
+    "city": "SPB"
+  },
+  {
+    "name": "Bob",
+    "age": "25",
+    "city": "Moscow"
+  },
+  {
+    "name": "Carlos",
+    "age": "30",
+    "city": "Kazan"
+  },
+  {
+    "name": "Dana",
+    "age": "21",
+    "city": "SPB"
+  },
+  {
+    "name": "Andrey",
+    "age": "27",
+    "city": "Novosibirsk"
+  }
+]
+```
 
 ### 3. CSV → XLSX
 
@@ -67,67 +97,9 @@
 - создаёт лист Sheet1;
 - использует первую строку как заголовок;
 - автоматически рассчитывает ширину колонок (не менее 8 символов).
-```python
-"""CSV → XLSX"""
+<img width="350" height="193" alt="изображение" src="https://github.com/user-attachments/assets/9da00ea5-deb4-4f30-8e74-51ef4b1737ad" />
+<img width="366" height="211" alt="изображение" src="https://github.com/user-attachments/assets/bb2af605-40e5-49d4-9f1b-6066c9d789c0" />
 
-import csv
-from pathlib import Path
-
-from openpyxl import Workbook
-from openpyxl.utils import get_column_letter
-
-
-def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
-    """
-    Конвертирует CSV в XLSX.
-    Первая строка — заголовок, лист "Sheet1", автоширина колонок (≥ 8).
-    """
-    src = Path(csv_path)
-    if not src.is_file():
-        raise FileNotFoundError(f"Файл не найден: {csv_path}")
-
-    with src.open(encoding="utf-8", newline="") as f:
-        rows = list(csv.reader(f))
-
-    if not rows or not any(rows):
-        raise ValueError("Пустой CSV")
-    if not rows[0]:
-        raise ValueError("CSV без заголовка")
-
-    wb = Workbook()
-    ws = wb.active
-    ws.title = "Sheet1"
-
-    widths = [0] * len(rows[0])
-    for i, row in enumerate(rows):
-        # выравниваем длину строк по количеству колонок заголовка
-        row = list(row) + [""] * (len(widths) - len(row))
-        ws.append(row[: len(widths)])
-        for j, value in enumerate(row[: len(widths)]):
-            widths[j] = max(widths[j], len(str(value)))
-
-    for j, w in enumerate(widths, start=1):
-        ws.column_dimensions[get_column_letter(j)].width = max(w + 2, 8)
-
-    Path(xlsx_path).parent.mkdir(parents=True, exist_ok=True)
-    wb.save(xlsx_path)
-
-if __name__ == "__main__":
-    BASE_DIR = Path(__file__).resolve().parents[2]
-    SAMPLES_DIR = BASE_DIR / "data" / "samples"
-    OUT_DIR = BASE_DIR / "data" / "out"
-    
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    print("Тест Задания Б (CSV -> XLSX)")
-    
-    input_file = SAMPLES_DIR / "cities.csv"
-    output_file = OUT_DIR / "people.xlsx"
-    
-    print(f"Конвертация {input_file} в {output_file}")
-    csv_to_xlsx(input_file, output_file)
-    print("Успешно.")
-```
 ## Используемые библиотеки
 
 - `json`, `csv`, `pathlib` — стандартные библиотеки Python.
@@ -177,4 +149,4 @@ python -m src.lab05.main
 
 ## Результаты выполнения
 
-Скриншоты выполнения и проверки XLSX находятся в папке `images/lab05/`.
+<img width="472" height="423" alt="изображение" src="https://github.com/user-attachments/assets/522ab8a8-cb44-467d-a927-6634ca6c8fd8" />
