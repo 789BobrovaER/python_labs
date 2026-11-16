@@ -101,7 +101,9 @@
 - автоматически рассчитывает ширину колонок (не менее 8 символов).
 <img width="350" height="193" alt="изображение" src="https://github.com/user-attachments/assets/9da00ea5-deb4-4f30-8e74-51ef4b1737ad" />
 <img width="366" height="211" alt="изображение" src="https://github.com/user-attachments/assets/bb2af605-40e5-49d4-9f1b-6066c9d789c0" />
+
 ---
+
 ## Используемые библиотеки
 
 - `json`, `csv`, `pathlib` — стандартные библиотеки Python.
