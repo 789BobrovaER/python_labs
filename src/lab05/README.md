@@ -4,7 +4,7 @@
 
 Изучение формата JSON, сериализации и десериализации данных, а также реализация конвертации между JSON, CSV и XLSX.
 
-
+---
 ## Реализованные функции
 
 ### 1. JSON → CSV
@@ -50,8 +50,7 @@
 ```
 <img width="442" height="167" alt="изображение" src="https://github.com/user-attachments/assets/e007defb-6f52-4c5b-b6fe-13e8e5590e22" />
 
-
-
+---
 ### 2. CSV → JSON
 
 Функция `csv_to_json(csv_path, json_path)`:
@@ -91,7 +90,7 @@
   }
 ]
 ```
-
+---
 ### 3. CSV → XLSX
 
 Функция `csv_to_xlsx(csv_path, xlsx_path)`:
@@ -102,7 +101,7 @@
 - автоматически рассчитывает ширину колонок (не менее 8 символов).
 <img width="350" height="193" alt="изображение" src="https://github.com/user-attachments/assets/9da00ea5-deb4-4f30-8e74-51ef4b1737ad" />
 <img width="366" height="211" alt="изображение" src="https://github.com/user-attachments/assets/bb2af605-40e5-49d4-9f1b-6066c9d789c0" />
-
+---
 ## Используемые библиотеки
 
 - `json`, `csv`, `pathlib` — стандартные библиотеки Python.
@@ -149,7 +148,7 @@ python -m src.lab05.main
 - Значения при преобразовании CSV → JSON сохраняются как строки.
 - При преобразовании JSON → CSV отсутствующие поля заполняются пустыми строками.
 - Пути к файлам задаются относительно корневой папки проекта.
-
+---
 ## Результаты выполнения
 
 <img width="472" height="423" alt="изображение" src="https://github.com/user-attachments/assets/522ab8a8-cb44-467d-a927-6634ca6c8fd8" />
