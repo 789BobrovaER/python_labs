@@ -50,7 +50,8 @@
 ```
 <img width="442" height="167" alt="изображение" src="https://github.com/user-attachments/assets/e007defb-6f52-4c5b-b6fe-13e8e5590e22" />
 
-```------------------------------------------------------------------------------------------------------------------------```
+
+
 ### 2. CSV → JSON
 
 Функция `csv_to_json(csv_path, json_path)`:
