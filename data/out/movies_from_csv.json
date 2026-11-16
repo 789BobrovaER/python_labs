@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "year": "2010",
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "year": "2014",
+    "genre": "Drama"
+  },
+  {
+    "title": "Parasite",
+    "director": "Bong Joon-ho",
+    "year": "2019",
+    "genre": "Thriller"
+  },
+  {
+    "title": "Amelie",
+    "director": "Jean-Pierre Jeunet",
+    "year": "2001",
+    "genre": "Romance"
+  },
+  {
+    "title": "Whiplash",
+    "director": "Damien Chazelle",
+    "year": "2014",
+    "genre": "Drama"
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "director": "Wes Anderson",
+    "year": "2014",
+    "genre": "Comedy"
+  }
+]
