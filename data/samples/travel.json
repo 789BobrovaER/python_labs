@@ -1,0 +1,31 @@
+[
+    {
+        "destination": "Paris",
+        "country": "France",
+        "days": "5",
+        "budget": "120000"
+    },
+    {
+        "destination": "Tokyo",
+        "country": "Japan",
+        "days": "10",
+        "budget": "250000"
+    },
+    {
+        "destination": "Rome",
+        "country": "Italy",
+        "days": "4",
+        "budget": "95000"
+    },
+    {
+        "destination": "Istanbul",
+        "country": "Turkey",
+        "days": "7"
+    },
+    {
+        "destination": "Prague",
+        "country": "Czech Republic",
+        "days": "3",
+        "budget": "70000"
+    }
+]
