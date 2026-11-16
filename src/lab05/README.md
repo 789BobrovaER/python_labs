@@ -59,6 +59,7 @@
 - сохраняет значения в виде строк;
 - форматирует JSON с отступами.
 <img width="312" height="185" alt="Снимок экрана 2026-11-16 205411" src="https://github.com/user-attachments/assets/682893d6-6318-45d0-81b0-443bfd02d5d6" />
+
 ```python
 [
   {
