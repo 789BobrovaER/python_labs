@@ -92,8 +92,10 @@ python -m src.lab06.cli_convert json2csv --in data/lab06/samples/people.json --o
 В результате создаётся CSV-файл с данными из исходного JSON. Первая строка содержит названия столбцов.
 
 **Результат выполнения:**
+<img width="350" height="640" alt="изображение" src="https://github.com/user-attachments/assets/0164817a-ad2b-46e9-a1af-bc60f600540c" />
 
-<!-- МЕСТО ДЛЯ СКРИНШОТА 4 — исходный JSON и полученный CSV -->
+<img width="408" height="204" alt="изображение" src="https://github.com/user-attachments/assets/4cbe1633-3541-46d6-9a11-9cb782d5a0fc" />
+
 
 ### 2.2. Преобразование CSV в JSON
 
