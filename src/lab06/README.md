@@ -92,6 +92,8 @@ python -m src.lab06.cli_convert json2csv --in data/lab06/samples/people.json --o
 В результате создаётся CSV-файл с данными из исходного JSON. Первая строка содержит названия столбцов.
 
 **Результат выполнения:**
+
+
 <img width="350" height="640" alt="изображение" src="https://github.com/user-attachments/assets/0164817a-ad2b-46e9-a1af-bc60f600540c" />
 
 <img width="408" height="204" alt="изображение" src="https://github.com/user-attachments/assets/4cbe1633-3541-46d6-9a11-9cb782d5a0fc" />
@@ -109,7 +111,10 @@ python -m src.lab06.cli_convert csv2json --in data/lab06/samples/people.csv --ou
 
 **Результат выполнения:**
 
-<!-- МЕСТО ДЛЯ СКРИНШОТА 5 — исходный CSV и полученный JSON -->
+
+<img width="321" height="199" alt="изображение" src="https://github.com/user-attachments/assets/0d0e1559-318b-4e2d-869b-75f2306ae338" />
+
+<img width="362" height="706" alt="изображение" src="https://github.com/user-attachments/assets/abb6d637-1a61-40ac-b1ef-a55e6b845962" />
 
 ### 2.3. Преобразование CSV в XLSX
 
@@ -127,51 +132,3 @@ python -m src.lab06.cli_convert csv2xlsx --in data/lab06/samples/people.csv --ou
 
 ---
 
-## 3. Запуск программы
-
-Для работы с проектом необходимо открыть терминал в корневой папке репозитория.
-
-### 3.1. Активация виртуального окружения
-
-Для Windows PowerShell:
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-### 3.2. Установка зависимостей
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-### 3.3. Запуск текстовых утилит
-
-Пример запуска команды `cat`:
-
-```bash
-python -m src.lab06.cli_text cat --input data/lab06/samples/people.csv -n
-```
-
-Пример запуска команды `stats`:
-
-```bash
-python -m src.lab06.cli_text stats --input data/lab06/samples/stats.txt --top 5
-```
-
-### 3.4. Запуск конвертера
-
-Примеры запуска всех трёх команд приведены в разделе 2.
-
----
-
-## 4. Итог работы
-
-В ходе лабораторной работы были реализованы консольные инструменты для чтения и анализа текстовых файлов, а также преобразования данных между форматами JSON, CSV и XLSX.
-
-Получены практические навыки:
-- Работы с аргументами командной строки с помощью `argparse`.
-- Чтения и обработки текстовых файлов.
-- Подсчёта статистических характеристик текста.
-- Преобразования структурированных данных.
-- Организации Python-модулей и запуска программ через терминал.
