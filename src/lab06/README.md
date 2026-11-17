@@ -54,7 +54,7 @@ python -m src.lab06.cli_text cat --input data/samples/people.csv
 **Команда для запуска:**
 
 ```bash
-python -m src.lab06.cli_text stats --input data/lab06/samples/stats.txt --top 5
+python -m src.lab06.cli_text stats --input data/samples/stats.txt --top 5
 ```
 
 
@@ -87,7 +87,7 @@ python -m src.lab06.cli_text stats --input data/lab06/samples/stats.txt --top 5
 Для выполнения операции используется команда:
 
 ```bash
-python -m src.lab06.cli_convert json2csv --in data/lab06/samples/people.json --out data/lab06/out/people.csv
+python -m src.lab06.cli_convert json2csv --in data/samples/people.json --out data/lab06/out/people.csv
 ```
 
 В результате создаётся CSV-файл с данными из исходного JSON. Первая строка содержит названия столбцов.
@@ -103,7 +103,7 @@ python -m src.lab06.cli_convert json2csv --in data/lab06/samples/people.json --o
 Команда для запуска:
 
 ```bash
-python -m src.lab06.cli_convert csv2json --in data/lab06/samples/people.csv --out data/lab06/out/people.json
+python -m src.lab06.cli_convert csv2json --in data/samples/people.csv --out data/lab06/out/people.json
 ```
 
 На выходе получается JSON-файл, содержащий записи из исходной таблицы. Значения полей сохраняются в строковом формате.
@@ -119,7 +119,7 @@ python -m src.lab06.cli_convert csv2json --in data/lab06/samples/people.csv --ou
 Для создания Excel-файла необходимо выполнить:
 
 ```bash
-python -m src.lab06.cli_convert csv2xlsx --in data/lab06/samples/people.csv --out data/lab06/out/people.xlsx
+python -m src.lab06.cli_convert csv2xlsx --in data/samples/people.csv --out data/lab06/out/people.xlsx
 ```
 
 После выполнения команды создаётся файл формата XLSX.
