@@ -32,12 +32,13 @@ python -m src.lab06.cli_text cat --input data/samples/people.csv -n
 **Пример запуска без нумерации:**
 
 ```bash
-python -m src.lab06.cli_text cat --input data/lab06/samples/people.csv
+python -m src.lab06.cli_text cat --input data/samples/people.csv
 ```
 
 **Результат выполнения:**
 
-<!-- МЕСТО ДЛЯ СКРИНШОТА 2 — cat без флага -n -->
+<img width="640" height="174" alt="изображение" src="https://github.com/user-attachments/assets/479a3fba-19a1-414f-a143-f9e6125456c1" />
+
 
 ### Функция `stats(input_path: str, top: int) -> None`
 
