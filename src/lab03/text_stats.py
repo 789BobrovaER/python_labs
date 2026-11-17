@@ -1,19 +1,17 @@
-from lib.text  import normalize, tokenize, count_freq, top_n
+from src.lib.text  import normalize, tokenize, count_freq, top_n
 
 mode = False
 
 
-def main():
-    text = input()
-
+def text_stats(text: str, top: int = 5) -> None:
     text = normalize(text)
     tokens = tokenize(text)
     freq = count_freq(tokens)
-    top_words = top_n(freq)
+    top_words = top_n(freq, n=top)
 
     print(f'Всего слов: {len(tokens)}')
     print(f'Уникальных слов: {len(freq.items())}')
-    print('Топ-5:')
+    print(f'Топ-{top}:')
 
     if mode:
         if top_words:
@@ -32,5 +30,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    text_stats()
 
