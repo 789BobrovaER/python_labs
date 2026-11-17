@@ -57,10 +57,11 @@ python -m src.lab06.cli_text cat --input data/samples/people.csv
 python -m src.lab06.cli_text stats --input data/lab06/samples/stats.txt --top 5
 ```
 
+
+
 **Результат выполнения:**
 
-<!-- МЕСТО ДЛЯ СКРИНШОТА 3 — результаты работы stats -->
-
+<img width="719" height="256" alt="изображение" src="https://github.com/user-attachments/assets/12106925-8ad9-4900-a702-5558ec0e1be0" />
 ---
 
 ## 2. Конвертация файлов
@@ -94,8 +95,6 @@ python -m src.lab06.cli_convert json2csv --in data/lab06/samples/people.json --o
 **Результат выполнения:**
 
 
-<img width="350" height="640" alt="изображение" src="https://github.com/user-attachments/assets/0164817a-ad2b-46e9-a1af-bc60f600540c" />
-
 <img width="408" height="204" alt="изображение" src="https://github.com/user-attachments/assets/4cbe1633-3541-46d6-9a11-9cb782d5a0fc" />
 
 
@@ -112,7 +111,6 @@ python -m src.lab06.cli_convert csv2json --in data/lab06/samples/people.csv --ou
 **Результат выполнения:**
 
 
-<img width="321" height="199" alt="изображение" src="https://github.com/user-attachments/assets/0d0e1559-318b-4e2d-869b-75f2306ae338" />
 
 <img width="362" height="706" alt="изображение" src="https://github.com/user-attachments/assets/abb6d637-1a61-40ac-b1ef-a55e6b845962" />
 
@@ -124,11 +122,11 @@ python -m src.lab06.cli_convert csv2json --in data/lab06/samples/people.csv --ou
 python -m src.lab06.cli_convert csv2xlsx --in data/lab06/samples/people.csv --out data/lab06/out/people.xlsx
 ```
 
-После выполнения команды создаётся файл формата XLSX, который можно открыть в Microsoft Excel или другой программе для работы с электронными таблицами.
+После выполнения команды создаётся файл формата XLSX.
 
 **Результат выполнения:**
 
-<!-- МЕСТО ДЛЯ СКРИНШОТА 6 — CSV и открытый XLSX -->
+<img width="362" height="219" alt="изображение" src="https://github.com/user-attachments/assets/67cfb547-f8d3-4644-87aa-2189910eb231" />
 
 ---
 
