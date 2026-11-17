@@ -21,12 +21,13 @@
 **Пример запуска с нумерацией строк:**
 
 ```bash
-python -m src.lab06.cli_text cat --input data/lab06/samples/people.csv -n
+python -m src.lab06.cli_text cat --input data/samples/people.csv -n
 ```
 
 **Результат выполнения:**
 
-<!-- МЕСТО ДЛЯ СКРИНШОТА 1 — cat с флагом -n -->
+<img width="664" height="179" alt="изображение" src="https://github.com/user-attachments/assets/7d264ce4-7e83-4f46-ac20-ee23e4b66ac0" />
+
 
 **Пример запуска без нумерации:**
 
