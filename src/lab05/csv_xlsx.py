@@ -1,4 +1,4 @@
-"""CSV → XLSX через openpyxl."""
+"""CSV → XLSX"""
 
 import csv
 from pathlib import Path

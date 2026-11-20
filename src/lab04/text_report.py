@@ -8,8 +8,8 @@ from pathlib import Path
 # корень проекта в sys.path, чтобы работал запуск и кнопкой, и через -m
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from src.lab04.io_txt_csv import read_text, write_csv  # noqa: E402
-from src.lib.text import count_freq, normalize, tokenize, top_n  # noqa: E402
+from src.lab04.io_txt_csv import read_text, write_csv  
+from src.lib.text import count_freq, normalize, tokenize, top_n  
 
 
 def sorted_word_counts(freq: dict[str, int]) -> list[tuple[str, int]]:

@@ -4,14 +4,15 @@ mode = False
 
 
 def text_stats(text: str, top: int = 5) -> None:
+
     text = normalize(text)
     tokens = tokenize(text)
     freq = count_freq(tokens)
-    top_words = top_n(freq, n=top)
+    top_words = top_n(freq)
 
     print(f'Всего слов: {len(tokens)}')
     print(f'Уникальных слов: {len(freq.items())}')
-    print(f'Топ-{top}:')
+    print('Топ-5:')
 
     if mode:
         if top_words:
