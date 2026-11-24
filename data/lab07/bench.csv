@@ -1,0 +1,20 @@
+task,n,impl,seconds
+sort,1000,sorted,0.000175
+sort,1000,bubble,0.086816
+sort,1000,insertion,0.045914
+sort,1000,selection,0.038024
+sort,10000,sorted,0.002052
+sort,10000,bubble,9.447795
+sort,10000,insertion,4.994603
+sort,10000,selection,4.382503
+sort,100000,sorted,0.029155
+sort,100000,bubble,> 60
+sort,100000,insertion,> 60
+sort,100000,selection,> 60
+search,100000,linear,4.377276
+search,100000,sort_once,0.030073
+search,100000,binary,0.058108
+two_sum,1000,brute,0.058217
+two_sum,1000,fast,0.000261
+two_sum,10000,brute,0.24459
+two_sum,10000,fast,0.000434
